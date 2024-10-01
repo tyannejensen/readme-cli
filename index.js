@@ -17,11 +17,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'tableOfContents',
-        message: 'What are the table of contents?'
-    },
-    {
-        type: 'input',
         name: 'installation',
         message: 'How do you install your project?'
     },
@@ -32,8 +27,21 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'guidelines',
+        message: 'What are the guidelines for the project?'
+    },
+    {
+        type: 'list',
         name: 'license',
-        message: 'Enter license or copyright.'
+        choices: [
+            'apache',
+            'boost',
+            'bds3',
+            'bds2',
+            'CC01'
+
+        ],
+        message: 'Choose a license or copyright.'
     },
     {
         type: 'input',
@@ -42,13 +50,18 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'email',
+        message: 'What is the developers email that created the application?'
+    },
+    {
+        type: 'input',
         name: 'tests',
         message: 'How do you test your application?'
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'What questions do you have?'
+        name: 'username',
+        message: 'What is the github username of the developer who created this application?'
     },
 ];
 

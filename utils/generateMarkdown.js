@@ -19,9 +19,6 @@ function renderLicenseBadge(license) {
     case 'CC01':
       result = '[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)]';
       break;
-    case 'attribution4.0International':
-      result = '[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)]';
-      break;
   }
   return result;
 }
@@ -63,19 +60,28 @@ ${renderLicenseBadge(license)}(${renderLicenseLink(license)})
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({title, description, tableOfContents, installation, usage, license, contributing, tests, questions}) {
+function generateMarkdown({title, description, guidelines, installation, usage, license, contributing, tests, email, username}) {
   return `# ${title}
 ## Description:
 ${description}
 
 ## Table Of Contents:
-${tableOfContents}
+1. [Installation](#Installation)
+2. [Usage](#Usage)
+3. [Guidelines](#Guidelines)
+3. [License](#License)
+4. [Contributing](#Contributing)
+5. [Tests](#Tests)
+6. [Questions](#Questions)
 
 ## Installation:
 ${installation}
 
 ## Usage:
 ${usage}
+
+## Guidelines:
+${guidelines}
 
 ${renderLicenseSection(license)}
 
@@ -86,7 +92,11 @@ ${contributing}
 ${tests}
 
 ## Questions:
-${questions}
+Here is the developers details in case you have any questions.
+
+Email: ${email}
+
+Username: ${username} 
 `;
 }
 

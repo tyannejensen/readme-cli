@@ -39,4 +39,4 @@ Email: tyannejensen@gmail.com
 Username: tyannejensen 
 
 ## Walkthrough Video
-click here &rarr; https://drive.google.com/file/d/1o1S-jE02ZR9LJpssgOI3i6D9OEZvavqG/view?usp=drive_link
+click here &rarr; https://drive.google.com/file/d/1r5WoRgpiS4_CeRNg-k41F2GQeIepzuJN/view?usp=drive_link
